@@ -37,7 +37,7 @@ h1 {
 }
 
 nav h2 {
-    padding-left: 100px;
+    padding-left: 60%;
 }
 
 
@@ -96,22 +96,15 @@ section {
         padding-right: 30px;
     }
     
-    /*fundo do menu*/
+    /*botão menu*/
     .mobile-menu-icon button{
         background-color: transparent;
         border: none;
         cursor: pointer;
     }
 
-    
     .mobile-menu ul {
-        display: flex;
-        padding-block: 10px;
-        margin-inline: 50px;
         list-style: none;
-        flex-direction: column;
-        text-align: center;
-        
     }
 
     .mobile-menu ul a {
@@ -120,16 +113,20 @@ section {
         color: rgb(197, 197, 197);
         padding: 10px;
         border-radius: 8px;
-    }
-
-    .mobile-menu #nav-item {
-        display: block;
-        padding-top: 1.2rem;   
+        width: 250px;
     }
 
     .open {
-        display: block;
+        display: flex;
+        justify-content: center;
+        padding-right:40px;
     }
+}
+
+.mobile-menu ul a:hover {
+    border-width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(60, 62, 78)
 }
 /*Corpo da página*/
 
@@ -164,15 +161,30 @@ section {
     margin-top: 5px;
 }
 
+#primeira-projetos {
+    padding-top: 50px;
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+#primeira-projetos img,#primeira-projetos a {
+    display: flex;
+    width: 300px;
+    margin: 20px;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
 #primeira a:hover {
     box-shadow: 0 0 5px white;
 }
 
-.mobile-menu ul a:hover {
-    border-width: 100%;
-    color: rgb(255, 255, 255);
-    background-color: rgb(60, 62, 78)
-}
+
 
 #segunda {
     padding-block: 50px;
@@ -210,6 +222,7 @@ footer {
 }
 
 footer h2 {
+    margin-left: 40px;
     height: 70px;
 }
 
@@ -230,7 +243,7 @@ footer a {
 }
 
 #whats-link:hover {
-    background-image: linear-gradient(90deg,rgb(104, 167, 102),rgb(0, 88, 0));
+    background-image: linear-gradient(90deg,rgb(0, 88, 0),rgb(81, 158, 78));
     text-shadow: 0 0 3px white;
     cursor:pointer;
     
