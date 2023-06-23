@@ -21,11 +21,10 @@ h2 {
 
 header {
     background-color: rgb(28, 32, 43);
-    padding-left: 14%;
 }
 
 #nav-bar {
-    width: 100%;
+    padding-left: 14%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,7 +44,6 @@ h1 {
 }
 
 #nav-item {
-    min-width: 130px;
 }
 
 #nav-bar a {
@@ -65,9 +63,9 @@ section {
 }
 
 #primeira img {
-    border-radius: 145px;
-    margin: 60px;
-    width: 300px
+    border-radius: 200px;
+    width: 250px;
+    margin-inline: 150px
 }
 
 .mobile-menu-icon {
@@ -118,6 +116,11 @@ section {
         padding-right:40px;
     }
 
+    #primeira img {
+        border-radius: 200px;
+        width: 250px;
+        margin: 50px
+    }
 }
 
 .mobile-menu ul a:hover {
@@ -137,9 +140,8 @@ section {
 }
 
 #primeira div {
-    margin-inline: 100px;
+    min-width: 200px;
     display: flex;
-    width: 500px;
     flex-direction: column;
     align-items: center;
 }
@@ -215,13 +217,11 @@ section {
 
 @media screen and (max-width: 780px) {
     #primeira-projetos a {
+        width: 300px;
         display: block;
-        width: 322px;
         margin: 10px;
     }
 }
-
-
 
 #segunda {
     padding-block: 50px;
@@ -231,16 +231,14 @@ section {
     justify-content: center;
 }
 
-#resumo {
-    display: flex;
+#segunda div {
+    max-width: 400px;
     box-shadow: 0 0 2px red;
     font-size: 17px;
     color: rgb(190, 188, 188);
     border-radius: 10px;
     padding-inline: 30px;
     margin: 10px;
-    width: 400px;
-    min-width: 400px;
 }
 
 div:hover p{
@@ -250,7 +248,6 @@ div:hover p{
 
 footer {
     display: flex;
-    width: 100%;
     min-height: 280px;
     background-color: rgb(28, 32, 43);
     flex-direction: column;
@@ -269,26 +266,27 @@ footer nav {
 }
 
 footer a {
-    border-radius: 8px;
+    border-radius: 9px;
     display: inline-flex;
     justify-content: center;
     margin: 20px 40px;
+    width: 100px;
     padding: 10px;
     background-color: rgb(16, 18, 20);
     color: white;
 }
+/*links*/
 
+/*hover dos links*/
 #whats-link:hover {
     background-image: linear-gradient(90deg,rgb(0, 88, 0),rgb(81, 158, 78));
     text-shadow: 0 0 3px white;
     cursor:pointer;
-    
 }
 
 #github-link:hover {
     background-color: rgb(0, 0, 0);
     text-shadow: 0 0 3px white;
-    transition: 0.5s;
     cursor:pointer;
 }
 
@@ -301,14 +299,12 @@ footer a {
 #linkedin-link:hover {
     background-color: rgb(38, 38, 104);
     text-shadow: 0 0 3px white;
-    transition: 0.5s;
     cursor:pointer;
 }
 
 #email-link:hover {
     color: rgb(126, 126, 126);
     background-color: rgb(255, 255, 255);
-    transition: 0.6s;
     text-shadow: 0 0 3px rgb(0, 0, 0);
     cursor:pointer;
 }
