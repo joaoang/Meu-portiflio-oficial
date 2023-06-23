@@ -10,27 +10,46 @@
 
 <body>
     <header>
-        <h2>Hello World</h2>
-        <div>
-            <a href="">Sobre mim</a>
-            <a href="">Projetos</a>
-            <a href="">Habilidades</a>
-            <a href="">Tecnologias</a>
+        <nav id="nav-bar">
+            <div id="nav-logo">
+                <h2>Hello World</h2>
+            </div>
+            <ul>
+                <li id="nav-item"><a href="">Sobre mim</a></li>
+                <li id="nav-item"><a href="">Projetos</a></li>
+                <li id="nav-item"><a href="">Habilidades</a></li>
+                <li id="nav-item"><a href="">Tecnologias</a></li>
+            </ul>
+
+            <!--Parte responsiva-->
+            <div class="mobile-menu-icon"><button onclick="menuShow()"><img src="imagens/menu-icone-40px.png"></button></div>
+        </nav>
+
+        <!--Parte responsiva-->
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="">Sobre mim</a></li>
+                <li><a href="">Projetos</a></li>
+                <li><a href="">Habilidades</a></li>
+                <li><a href="">Tecnologias</a></li>
+            </ul>
         </div>
+
     </header>
 
     <section id="primeira">
-        <img src="imagens/JV-lindão.jpeg" alt="">
-
+        
         <div>
             <h1>Olá, eu sou o João</h1>
             <h2>Futuro desenvolvedor Front-End</h2>
             <a href="">Meus projetos</a>
         </div>
+        
+        <img src="imagens/JV-lindão.jpeg" alt="">
 
     </section>
 
-    <section>
+    <section id="segunda">
         <div id="resumo"><p>Quero atuar na área de TI. Apaixonado por tecnologia em geral, sempre gostei de computador. Já montei
                             alguns setup’s
                             e sistemas, mas nos últimos anos me descobri um programador e gostaria muito de trabalhar no Front-End.
@@ -47,8 +66,14 @@
     </section>
 
     <footer>
+        <h2>Contato</h2>
+
+        <footer-nav>
+            <div>Whatsapp</div> <div>GitHub</div> <div>Vagas</div> <div>linkedin</div>
+        </footer-nav>
         
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

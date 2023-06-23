@@ -8,17 +8,27 @@ body {
     color: white;
 }
 
-a {
-    text-decoration: none;
+a { text-decoration: none; }
+
+h2 {
+    min-width: 100px;
+    color: rgb(151, 151, 151);
+    font-size:16px;
+    font-weight: 600;
 }
 
+/*Header da página*/
+
 header {
+    background-color: rgb(28, 32, 43);
+}
+
+#nav-bar {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(28, 32, 43);
-    position: fixed;
+    
 }
 
 h1 {
@@ -26,26 +36,29 @@ h1 {
     letter-spacing: 2px;
 }
 
-h2 {
-    color: rgb(151, 151, 151);
-    font-size:16px;
-    font-weight: 600;
-    padding-inline: 100px;
+nav h2 {
+    padding-left: 100px;
 }
 
-header div {
-    width: 500px;
+
+#nav-bar ul {
     display: flex;
     justify-content: center;
+    list-style: none;
+    
 }
 
-header div a {
+#nav-item {
+    min-width: 130px;
+}
+
+#nav-bar a {
     color: rgb(151, 151, 151);
     font-size: 15px;
     padding: 12px;
 }
 
-header div :hover {
+#nav-bar ul :hover {
     color: white;
     transition: 0.5s;
 }
@@ -55,20 +68,79 @@ section {
     justify-content: center;
 }
 
-img {
+#primeira img {
     border-radius: 145px;
     margin: 60px;
     width: 300px
 }
 
+.mobile-menu-icon {
+    display: none;
+}
 
+.mobile-menu {
+    display: none;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 780px) {
+    
+    /*esse aqui faz desaparecer tudo*/
+    #nav-item {
+        display: none;
+    }
+
+    /*icone do menu*/
+    .mobile-menu-icon{
+        display: block;
+        padding-right: 30px;
+    }
+    
+    /*fundo do menu*/
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    
+    .mobile-menu ul {
+        display: flex;
+        padding-block: 10px;
+        margin-inline: 50px;
+        list-style: none;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .mobile-menu ul a {
+        display: flex;
+        justify-content: center;
+        color: rgb(197, 197, 197);
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .mobile-menu #nav-item {
+        display: block;
+        padding-top: 1.2rem;   
+    }
+
+    .open {
+        display: block;
+    }
+}
+/*Corpo da página*/
 
 #primeira {
     padding-top: 50px;
-    height: 350px;
+    min-height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
 }
 
 #primeira div {
@@ -96,18 +168,57 @@ img {
     box-shadow: 0 0 5px white;
 }
 
+.mobile-menu ul a:hover {
+    border-width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(60, 62, 78)
+}
+
+#segunda {
+    padding-block: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 #resumo {
     display: flex;
+    position: relative;
     box-shadow: 0 0 2px red;
     font-size: 17px;
-    color: rgb(214, 214, 214);
+    color: rgb(197, 197, 197);
     border-radius: 10px;
     padding-inline: 30px;
-    margin-inline: 20px;
+    margin: 10px;
     width: 400px;
+    min-width: 400px;
 }
 
 #resumo:hover {
     color: white;
     transition: 0.5s;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    min-height: 200px;
+    background-color: rgb(28, 32, 43);
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h2 {
+    height: 70px;
+}
+
+footer div {
+    height: 30px;
+    border-radius: 8px;
+    display: inline;
+    width: 60px;
+    margin: 20px 40px;
+    padding: 10px;
+    background-color: rgb(16, 18, 20);
 }
