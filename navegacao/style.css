@@ -21,7 +21,6 @@ h2 {
 
 header {
     background-color: rgb(28, 32, 43);
-    padding-left: 14%;
 }
 
 #nav-bar {
@@ -36,6 +35,11 @@ h1 {
     margin: 0px;
     letter-spacing: 2px;
 }
+
+nav h2 {
+    padding-left: 60%;
+}
+
 
 #nav-bar ul {
     display: flex;
@@ -205,7 +209,7 @@ section {
 
 #resumo:hover {
     color: white;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 footer {
@@ -260,13 +264,6 @@ footer a {
 #linkedin-link:hover {
     background-color: rgb(38, 38, 104);
     text-shadow: 0 0 3px white;
-    cursor:pointer;
-}
-
-#email-link:hover {
-    color: rgb(126, 126, 126);
-    background-color: rgb(255, 255, 255);
-    text-shadow: 0 0 3px rgb(0, 0, 0);
     cursor:pointer;
 }
 
