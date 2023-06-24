@@ -204,6 +204,8 @@ section {
     padding-top: 50px;
 }
 
+
+
 #primeira-projetos div {
     display: flex;
     margin: 20px;
@@ -246,6 +248,32 @@ div:hover p{
     transition: 0.2s;
 }
 
+
+/*Sobre mim*/
+#sobre-mim {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+#sobre-mim  div{
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 2px red;
+    font-size: 17px;
+    color: rgb(197, 197, 197);
+}
+
+#sobre-mim p {
+    max-width: 550px;
+    margin: 15px;
+}
+
+/*Footer*/
 footer {
     display: flex;
     min-height: 280px;
