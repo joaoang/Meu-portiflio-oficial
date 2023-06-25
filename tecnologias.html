@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
-    <title>João Tecnologias</title>
+    <title>Tecnologias e cursos</title>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
                 <li id="nav-item"><a href="index.html">Início</a></li>
                 <li id="nav-item"><a href="projetos.html">Projetos</a></li>
                 <li id="nav-item"><a href="Sobre-mim.html">Sobre mim</a></li>
-                <li id="nav-item"><a href="tecnologias.html">Tecnologias</a></li>
+                <li id="nav-item"><a href="tecnologias.html">Tecnologias e cursos</a></li>
             </ul>
 
             <!--Parte responsiva-->
@@ -31,23 +31,75 @@
                 <li><a href="index.html">Início</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="Sobre-mim.html">Sobre mim</a></li>
-                <li><a href="tecnologias.html">Tecnologias</a></li>
+                <li><a href="tecnologias.html">Tecnologias e cursos</a></li>
             </ul>
         </div>
 
     </header>
 
-    <h1 style="color: rgb(73, 78, 92);padding-left: 10%;padding-block: 50px;">Clique para entender</h1>
+    <h1 style="color: rgb(73, 78, 92);padding-left: 10%;padding-block: 50px;">Tecnologias que estou aprendendo</h1>
 
     <section id="tecnologias">
-        <div><img src="tecnologias/HTML5_logo_and_wordmark.svg.png" alt=""></div>
+        <div id="imgtec" onclick="htmlBotao()"><img src="tecnologias/HTML5_logo_and_wordmark.svg.png" alt="">
+        
+            <section id="info-tec">
+                <p id="visor1"></p>
+            </section>
+        
+        </div>
 
-        <div><img src="tecnologias/1452px-CSS3_logo_and_wordmark.svg.png" alt=""></div>
+        <div id="imgtec" onclick="cssBotao()"><img src="tecnologias/1452px-CSS3_logo_and_wordmark.svg.png" alt="">
+        
+            <section id="info-tec">
+                <p id="visor2"></p>
+            </section>
+        
+        </div>
 
-        <div><img src="tecnologias/logo-javascript-1024.png" alt=""></div>
+        <div id="imgtec" onclick="jsBotao()"><img src="tecnologias/logo-javascript-1024.png" alt="">
+        
+            <section id="info-tec">
+                <p id="visor3"></p>
+            </section>
+        
+        </div>
 
-        <div><img src="tecnologias/react-logo.png" alt=""></div>
+        <div id="imgtec" onclick="reactBotao()"><img src="tecnologias/react-logo.png" alt="">
+        
+            <section id="info-tec">
+                <p id="visor4"></p>
+            </section>
+        
+        </div>
     </section>
+    <h1>Cursos feitos</h1>
+    <div id="botaoscroll">
+        
+        <section id="cursos">
+            <div>
+                <h2>Udemi</h2>
+                <p>Html5, Css3 e Javascript Na Prática, 2 Horas 04/2023</p>
+            </div>
+            <div>
+                <h2>Unirriter</h2>
+                <p>Engenharia Mecânica - Superior cursando 14/02/2022 - Não concluído.</p>
+            </div>
+            <div>
+                <h2>Curso em vídeo</h2>
+                <p>Javascript, 40 Horas - 11/2022</p>
+            </div>
+            <div>
+                <h2>Curso em vídeo</h2>
+                <p>Curso Completo e Atual de Html5 e Css3, 40 Horas - 07/2022</p>
+            </div>
+            <div>
+                <h2>Rockfeller</h2>
+                <p>Curso de Inglês, 6 Meses - 11/2021 Entendimento: Inglês técnico.</p>
+            </div>
+        </section>
+    </div>
+
+    
 
     <footer>
         <h2>Contato</h2>
