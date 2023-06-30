@@ -49,6 +49,12 @@ h1 {
     padding: 12px;
 }
 
+p {
+    display: flex;
+    justify-content: center;
+    color: rgb(151, 151, 151);
+}
+
 #nav-bar ul :hover {
     color: white;
     transition: 0.5s;
@@ -74,8 +80,12 @@ section {
     transition: 0.5s;
 }
 
+#nav-item:hover {
+    transition: 1s;
+}
+
 @media screen and (max-width: 700px) {
-    
+
     /*esse aqui faz desaparecer tudo*/
     #nav-item {
         display: none;
@@ -122,6 +132,7 @@ section {
 
 .mobile-menu ul a:hover {
     border-width: 100%;
+    transition: 0.5s;
     color: rgb(255, 255, 255);
     background-color: rgb(60, 62, 78)
 }
@@ -241,7 +252,7 @@ section {
     margin: 10px;
 }
 
-div:hover p{
+div:hover p, #cursos div:hover h2 {
     color: white;
     transition: 0.2s;
 }
